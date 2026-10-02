@@ -1,0 +1,26 @@
+# Next.js Build Ignore File
+# Reduces compilation time by ignoring unnecessary files
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Demo and example files
+**/examples/**
+**/demo/**
+
+# Documentation
+**/*.md
+**/docs/**
+**/*.MD
+
+# Development only
+**/*.stories.tsx
+**/*.storybook.tsx
+
+# Large data files that don't need compilation
+**/data/**/*.json
+**/data/**/*.csv
+**/data/**/*.xlsx

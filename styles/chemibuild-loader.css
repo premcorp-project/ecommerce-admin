@@ -1,0 +1,240 @@
+.floating-circle-1 {
+  animation: float1 8s ease-in-out infinite;
+}
+.floating-circle-2 {
+  animation: float2 10s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(50px, 30px) scale(1.2);
+  }
+}
+
+@keyframes float2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, -50px) scale(1.3);
+  }
+}
+
+/* Spinning rings */
+.spinner-ring-1 {
+  animation: spin 3s linear infinite;
+}
+.spinner-ring-2 {
+  animation: spin-reverse 2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Center icon animations */
+.pulse-scale {
+  animation: pulse-scale 2s ease-in-out infinite;
+}
+
+@keyframes pulse-scale {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 20px 60px rgba(30, 64, 175, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 20px 80px rgba(30, 64, 175, 0.5);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    transform: scale(0.8);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+}
+
+.icon-appear {
+  animation: icon-appear 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s
+    backwards;
+}
+
+@keyframes icon-appear {
+  from {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Orbiting particles */
+.particle {
+  animation:
+    orbit 3s linear infinite,
+    particle-scale 2s ease-in-out infinite;
+}
+
+.particle-1 {
+  animation-delay: 0s, 0s;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(50px) rotate(0deg);
+}
+.particle-2 {
+  animation-delay: 1s, 0.7s;
+  transform: translate(-50%, -50%) rotate(120deg) translateX(50px)
+    rotate(-120deg);
+}
+.particle-3 {
+  animation-delay: 2s, 1.4s;
+  transform: translate(-50%, -50%) rotate(240deg) translateX(50px)
+    rotate(-240deg);
+}
+
+@keyframes orbit {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(50px)
+      rotate(-360deg);
+  }
+}
+
+@keyframes particle-scale {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+/* Text animations */
+.letter-bounce {
+  display: inline-block;
+  animation:
+    fade-in 0.3s ease-out backwards,
+    letter-bounce 1s ease-in-out 0.5s infinite;
+}
+
+.letter-1 {
+  animation-delay: 0s, 0.5s;
+}
+.letter-2 {
+  animation-delay: 0.15s, 0.6s;
+}
+.letter-3 {
+  animation-delay: 0.25s, 0.7s;
+}
+.letter-4 {
+  animation-delay: 0.35s, 0.8s;
+}
+.letter-5 {
+  animation-delay: 0.45s, 0.9s;
+}
+.letter-6 {
+  animation-delay: 0.55s, 1.0s;
+}
+.letter-7 {
+  animation-delay: 0.65s, 1.1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes letter-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+/* Badge animation */
+.badge-appear {
+  animation: badge-appear 0.4s ease-out 0.8s backwards;
+}
+
+@keyframes badge-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Progress bar */
+.progress-container {
+  animation: fade-in 0.4s ease-out 1s backwards;
+}
+
+.progress-bar {
+  animation: progress-slide 1.5s ease-in-out infinite;
+}
+
+@keyframes progress-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.loading-text {
+  animation: fade-in 0.4s ease-out 1.2s backwards;
+}
+
+.loading-dots {
+  animation: dots-blink 1.5s ease-in-out infinite;
+}
+
+@keyframes dots-blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

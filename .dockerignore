@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.gitignore
+.env.local
+.env*.local
+npm-debug.log*
+README.md
+.vscode
+.kiro
+.agents
+__tests__
+.rules
