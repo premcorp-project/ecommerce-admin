@@ -4,28 +4,22 @@
  * Customer Register Page — app/(auth)/register/page.tsx
  *
  * Client-side only. Uses Formik + Yup for form state and validation.
- * Calls POST /auth/register, stores auth in CustomerAuthStore.
- * Redirects to /account on success.
+ * Calls POST /auth/register. On success it shows a confirmation toast and
+ * resets the form — it does NOT auto-login or redirect (admin-only app).
  * Maps 422 field-level errors to Formik via setFieldError.
  *
  * Requirements: 10.3, 10.6, 10.8
  */
-import * as React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { Form, Formik, FormikHelpers } from 'formik';
-import { FlaskConical, ShieldCheck, Truck, Users, Zap } from 'lucide-react';
-import { useTranslations } from 'next-intl';
-import toast from 'react-hot-toast';
-import * as Yup from 'yup';
-import publicApi from '@/lib/api/public-api';
-import {
-  CustomerUser,
-  useCustomerAuthStore,
-} from '@/lib/stores/customer-auth-store';
 import { AppButton } from '@/components/shared/AppButton';
 import { AppInputField } from '@/components/shared/form/AppInput';
 import { AppPasswordField } from '@/components/shared/form/AppPasswordField';
+import publicApi from '@/lib/api/public-api';
+import { Form, Formik, FormikHelpers } from 'formik';
+import { FlaskConical, ShieldCheck, Truck, Users, Zap } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import toast from 'react-hot-toast';
+import * as Yup from 'yup';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -89,24 +83,11 @@ const features = [
 
 export default function RegisterPage() {
   const t = useTranslations('public.auth');
-  const router = useRouter();
-  const { token, setAuth } = useCustomerAuthStore();
   const registerSchema = useRegisterSchema();
-
-  // Redirect if already authenticated
-  React.useEffect(() => {
-    if (token) {
-      router.replace('/account');
-    }
-  }, [token, router]);
-
-  if (token) {
-    return null;
-  }
 
   const handleSubmit = async (
     values: RegisterFormValues,
-    { setSubmitting, setFieldError }: FormikHelpers<RegisterFormValues>,
+    { setSubmitting, setFieldError, resetForm }: FormikHelpers<RegisterFormValues>,
   ) => {
     try {
       const res = await publicApi.post<RegisterApiResponse>('/auth/register', {
@@ -117,26 +98,10 @@ export default function RegisterPage() {
 
       const response = res.data as RegisterApiResponse;
 
-      const user = response.user ?? response.data?.user;
-      const accessToken =
-        response.accessToken ??
-        response.token ??
-        response.data?.accessToken ??
-        response.data?.token;
-
-      if (accessToken && user) {
-        const customerUser: CustomerUser = {
-          _id: user._id || user.id,
-          name: user.name,
-          email: user.email,
-          role: user.role || 'customer',
-          hasBulkAccess: user.hasBulkAccess ?? user.isBulkBuyer ?? false,
-          hasCODAccess: user.hasCODAccess ?? user.isCodEnabled ?? false,
-        };
-        setAuth(customerUser, accessToken);
-        toast.success(response.message ?? t('registerSuccess'));
-        router.push('/account');
-      }
+      // Account-created flow: show success and reset the form.
+      // Do not auto-login or redirect — this is an admin-only app.
+      toast.success(response.message ?? t('registerSuccess'));
+      resetForm();
     } catch (error) {
       const apiError = error as {
         response?: {
