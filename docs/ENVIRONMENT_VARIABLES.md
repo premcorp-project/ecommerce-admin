@@ -1,6 +1,6 @@
 # Environment Variables Guide
 
-This document explains all environment variables used in the OttimoDirect ecommerce frontend and how to configure them for different environments.
+This document explains all environment variables used in the ChemTech ecommerce frontend and how to configure them for different environments.
 
 ---
 

@@ -1,4 +1,4 @@
-# Hero Banner Design Specification — OttimoDirect Mobile App
+# Hero Banner Design Specification — ChemTech Mobile App
 
 A complete, precise specification for designing home-screen hero banners.
 Written for human designers, AI design agents (Claude, Canva AI, Midjourney),

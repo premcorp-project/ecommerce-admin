@@ -12,7 +12,7 @@ import { WishlistPageContent } from './WishlistPageContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Wishlist | OttimoDirect',
+  title: 'Wishlist | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!product) {
     return {
-      title: 'Product Not Found | OttimoDirect',
+      title: 'Product Not Found | ChemTech',
     };
   }
 
@@ -73,10 +73,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .slice(0, 160);
 
   return {
-    title: `${product.name} | OttimoDirect`,
+    title: `${product.name} | ChemTech`,
     description: strippedDescription,
     openGraph: {
-      title: `${product.name} | OttimoDirect`,
+      title: `${product.name} | ChemTech`,
       description: strippedDescription,
       images:
         (product.images ?? []).length > 0
@@ -112,7 +112,7 @@ export default async function ProductDetailPage({ params }: Props) {
     image: (product.images ?? []).map((img) => img.url),
     brand: {
       '@type': 'Brand',
-      name: 'OttimoDirect',
+      name: 'ChemTech',
     },
     ...(product.reviewCount > 0 && {
       aggregateRating: {

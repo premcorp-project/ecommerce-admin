@@ -10,7 +10,7 @@ const API_BASE =
   process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:5000/api/v1';
 
 export const metadata: Metadata = {
-  title: 'Return Policy | OttimoDirect',
+  title: 'Return Policy | ChemTech',
   description: 'Read our return and refund policy.',
 };
 

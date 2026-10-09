@@ -13,7 +13,7 @@ import { CheckoutPageContent } from './CheckoutPageContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Checkout | OttimoDirect',
+  title: 'Checkout | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

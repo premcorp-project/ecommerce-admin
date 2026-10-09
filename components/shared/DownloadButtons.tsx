@@ -44,7 +44,7 @@ export function DownloadButtons<T extends object>({
         title:
           title ??
           fileName.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
-        businessName: 'OttimoDirect',
+        businessName: 'ChemTech',
         currency,
       });
       toast.success(t('excelDownloadSuccess'));

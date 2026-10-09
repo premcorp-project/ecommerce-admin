@@ -87,11 +87,11 @@ export const downloadExcel = async <T extends Record<string, unknown>>(
   meta?: DownloadMeta,
 ) => {
   const wb = new ExcelJS.Workbook();
-  wb.creator = 'OttimoDirect Admin';
+  wb.creator = 'ChemTech Admin';
   wb.created = new Date();
 
   const title = meta?.title ?? fileName.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-  const businessName = meta?.businessName ?? 'OttimoDirect';
+  const businessName = meta?.businessName ?? 'ChemTech';
   const currency = meta?.currency ?? 'GBP';
   const generatedAt = new Date().toLocaleString('en-GB', {
     day: '2-digit', month: 'short', year: 'numeric',

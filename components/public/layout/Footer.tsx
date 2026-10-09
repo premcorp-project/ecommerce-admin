@@ -96,7 +96,7 @@ export function Footer() {
                         <Link
                             href="/"
                             className="inline-flex items-center gap-1.5 font-bold text-xl tracking-tight text-foreground mb-3"
-                            aria-label={`${businessName || 'OttimoDirect'} — Home`}
+                            aria-label={`${businessName || 'ChemTech'} — Home`}
                         >
                             <Leaf className="size-5 text-primary" aria-hidden="true" />
                             <span className="text-primary">Ottimo</span>
@@ -177,7 +177,7 @@ export function Footer() {
                 {/* Bottom bar */}
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
                     <p>
-                        © {new Date().getFullYear()} {businessName || 'OttimoDirect'}. {tFooter('allRightsReserved')}
+                        © {new Date().getFullYear()} {businessName || 'ChemTech'}. {tFooter('allRightsReserved')}
                     </p>
                     <div className="flex items-center gap-4">
                         <Link href="/privacy" className="hover:text-foreground transition-colors">

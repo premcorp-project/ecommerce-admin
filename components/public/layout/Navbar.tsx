@@ -283,7 +283,7 @@ export function Navbar() {
                         <Link
                             href="/"
                             className="flex items-center gap-1.5 shrink-0 font-bold text-xl tracking-tight"
-                            aria-label="OttimoDirect — Home"
+                            aria-label="ChemTech — Home"
                         >
                             <FlaskConical className="size-5 text-primary" aria-hidden="true" />
                             <span>

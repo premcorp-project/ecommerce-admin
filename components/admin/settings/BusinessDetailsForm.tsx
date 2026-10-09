@@ -213,7 +213,7 @@ export default function BusinessDetailsForm({
                   onChange={handleChange}
                   onBlur={handleBlur}
                   disabled={!canWrite}
-                  placeholder="OttimoDirect Ltd"
+                  placeholder="ChemTech Ltd"
                 />
               </div>
               <div className="space-y-1.5">

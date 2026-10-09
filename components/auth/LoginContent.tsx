@@ -1,20 +1,20 @@
 'use client';
 
-import { AppButton } from '@/components/shared/AppButton';
-import { AppInputField } from '@/components/shared/form/AppInput';
-import { AppPasswordField } from '@/components/shared/form/AppPasswordField';
-import { usePostLogin } from '@/hooks/api/auth';
-import { useAdminAuthStore } from '@/lib/stores/admin-auth-store';
-import { handleApiError } from '@/lib/toast-error';
-import { storeUser } from '@/lib/user';
+import * as React from 'react';
+import Link from 'next/link';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { loginSchema } from '@/schemas/auth/login.schema';
 import { ApiErrorResponse } from '@/types';
 import { Form, Formik } from 'formik';
 import { FlaskConical, Shield, Truck, Users } from 'lucide-react';
-import Link from 'next/link';
-import { useRouter, useSearchParams } from 'next/navigation';
-import * as React from 'react';
 import toast from 'react-hot-toast';
+import { useAdminAuthStore } from '@/lib/stores/admin-auth-store';
+import { handleApiError } from '@/lib/toast-error';
+import { storeUser } from '@/lib/user';
+import { usePostLogin } from '@/hooks/api/auth';
+import { AppButton } from '@/components/shared/AppButton';
+import { AppInputField } from '@/components/shared/form/AppInput';
+import { AppPasswordField } from '@/components/shared/form/AppPasswordField';
 
 const initialValues = { email: '', password: '' };
 
@@ -138,7 +138,7 @@ function LoginContent() {
             <Link href="/" className="inline-flex items-center gap-2">
               <FlaskConical className="size-8 text-primary-foreground" />
               <span className="text-2xl font-bold text-primary-foreground">
-                OttimoDirect
+                ChemTech
               </span>
             </Link>
           </div>
@@ -172,7 +172,7 @@ function LoginContent() {
 
           {/* Footer */}
           <p className="text-xs text-primary-foreground/50">
-            © {new Date().getFullYear()} OttimoDirect. All rights reserved.
+            © {new Date().getFullYear()} ChemTech. All rights reserved.
           </p>
         </div>
       </div>
@@ -184,9 +184,7 @@ function LoginContent() {
           <div className="lg:hidden mb-8 text-center">
             <Link href="/" className="inline-flex items-center gap-2">
               <FlaskConical className="size-6 text-primary" />
-              <span className="text-xl font-bold text-primary">
-                OttimoDirect
-              </span>
+              <span className="text-xl font-bold text-primary">ChemTech</span>
             </Link>
           </div>
 

@@ -12,7 +12,7 @@ import { ProfilePageContent } from './ProfilePageContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Profile | OttimoDirect',
+  title: 'Profile | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

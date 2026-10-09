@@ -1,6 +1,6 @@
-# OttimoDirect Mobile App — Complete Integration Guide
+# ChemTech Mobile App — Complete Integration Guide
 
-> **Purpose:** This document provides everything needed to build a mobile app (React Native, Flutter, etc.) for the OttimoDirect platform. It covers authentication, product browsing, cart, checkout, pricing, delivery, orders, and real-time notifications.
+> **Purpose:** This document provides everything needed to build a mobile app (React Native, Flutter, etc.) for the ChemTech platform. It covers authentication, product browsing, cart, checkout, pricing, delivery, orders, and real-time notifications.
 
 **Backend Base URL:** `http://localhost:3001/api/v1` (dev) | `https://chemibuild-ecommerce-api-production.up.railway.app/api/v1` (prod)
 
@@ -34,7 +34,7 @@
 
 ## 1. Platform Overview
 
-OttimoDirect is a **B2B/B2C chemical products ecommerce platform** (adhesives, resins, coatings, solvents). Key business rules:
+ChemTech is a **B2B/B2C chemical products ecommerce platform** (adhesives, resins, coatings, solvents). Key business rules:
 
 | Rule                           | Detail                                                       |
 | ------------------------------ | ------------------------------------------------------------ |
@@ -1182,7 +1182,7 @@ Response:
   "data": {
     "currency": "GBP",
     "currencySymbol": "£",
-    "businessName": "OttimoDirect",
+    "businessName": "ChemTech",
     "businessPhone": "+44-20-1234-5678",
     "businessEmail": "info@chemibuild.com",
     "theme": "default",

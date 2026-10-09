@@ -13,7 +13,7 @@ import { OrderDetailPageContent } from './OrderDetailPageContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Order Details | OttimoDirect',
+  title: 'Order Details | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

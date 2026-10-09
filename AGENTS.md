@@ -706,7 +706,7 @@ Use `next/image` for ALL product and banner images — never `<img>` tags.
 Every public page MUST have:
 
 - `generateMetadata()` or `export const metadata` with `title` and `description`
-- Meaningful `title` — never leave as the default "OttimoDirect Admin"
+- Meaningful `title` — never leave as the default "ChemTech Admin"
 - `og:image` for product and category pages
 - Structured data (JSON-LD) for product pages
 
@@ -714,7 +714,7 @@ Every public page MUST have:
 // ✅ Every public page
 export async function generateMetadata({ params }): Promise<Metadata> {
   return {
-    title: `${product.name} | OttimoDirect`,
+    title: `${product.name} | ChemTech`,
     description: product.description.slice(0, 160),
     openGraph: { images: [product.images[0]?.url] },
   };
@@ -816,7 +816,7 @@ The public site inherits the theme from `GET /config` via the root layout — no
 
 ### Domain — Chemical Products Ecommerce
 
-OttimoDirect is a **B2B/B2C chemical products platform** (adhesives, resins, coatings, solvents, etc.). Design and implementation must reflect this:
+ChemTech is a **B2B/B2C chemical products platform** (adhesives, resins, coatings, solvents, etc.). Design and implementation must reflect this:
 
 - Products are industrial/technical — variants are typically volume, size, or concentration
 - Bulk pricing tiers are a first-class feature — always display them prominently on product detail
@@ -1064,7 +1064,7 @@ const jsonLd = {
   name: product.name,
   description: product.description.replace(/<[^>]+>/g, ''),
   image: product.images.map((img) => img.url),
-  brand: { '@type': 'Brand', name: 'OttimoDirect' },
+  brand: { '@type': 'Brand', name: 'ChemTech' },
   aggregateRating:
     product.reviewCount > 0
       ? {

@@ -1,5 +1,5 @@
 /**
- * Public TypeScript Types — OttimoDirect Customer Storefront
+ * Public TypeScript Types — ChemTech Customer Storefront
  *
  * All interfaces derived from CUSTOMER_SITE_GUIDE.md Section 14.
  * These types are used exclusively in app/(public)/ and components/public/.

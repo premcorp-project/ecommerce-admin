@@ -68,7 +68,7 @@ export function WhatsAppButton() {
                         </div>
                         <div className="flex-1 min-w-0">
                             <p className="text-sm font-semibold text-white truncate">
-                                {businessName || 'OttimoDirect'}
+                                {businessName || 'ChemTech'}
                             </p>
                             <p className="text-xs text-white/70">{t('whatsappOnline')}</p>
                         </div>
@@ -86,7 +86,7 @@ export function WhatsAppButton() {
                     <div className="px-4 py-5 bg-muted/30 min-h-[100px]">
                         {/* Greeting bubble */}
                         <div className="bg-card border border-border rounded-lg rounded-tl-none px-3 py-2 max-w-[85%] shadow-sm">
-                            <p className="text-sm text-foreground">{t('whatsappGreeting', { name: businessName || 'OttimoDirect' })}</p>
+                            <p className="text-sm text-foreground">{t('whatsappGreeting', { name: businessName || 'ChemTech' })}</p>
                             <p className="text-[10px] text-muted-foreground mt-1 text-right">
                                 {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                             </p>

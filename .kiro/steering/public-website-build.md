@@ -4,7 +4,7 @@ inclusion: always
 
 # Public Website — Build Guide
 
-> This file governs all implementation work on the OttimoDirect customer-facing storefront.
+> This file governs all implementation work on the ChemTech customer-facing storefront.
 > It extends the rules in `public-website.md` and `AGENTS.md`.
 > **Always read `docs/CUSTOMER_SITE_GUIDE.md` before implementing any public page or feature.**
 > For delivery fees, bulk pricing, and checkout logic, also read `docs/BULK_BUYER_GUIDE.md` (references `docs/DELIVERY_SYSTEM_GUIDE.md` and `docs/TIERED_PRICING_QA_GUIDE.md`).
@@ -349,13 +349,13 @@ Every public page must have `generateMetadata()` or `export const metadata`. No 
 
 ### Page-specific metadata
 
-| Page                  | Title                                         | Description   | OG Image                              | JSON-LD        |
-| --------------------- | --------------------------------------------- | ------------- | ------------------------------------- | -------------- |
-| Homepage              | `OttimoDirect — Industrial Chemical Products` | Site tagline  | Hero banner image                     | Organization   |
-| Product listing       | `{category} Products                          | OttimoDirect` | Category description                  | —              |
-| Product detail        | `{name}                                       | OttimoDirect` | Stripped HTML description (160 chars) | Product schema |
-| Category              | `{name}                                       | OttimoDirect` | Category description                  | —              |
-| Cart/Checkout/Account | `{Page}                                       | OttimoDirect` | Generic                               | —              |
+| Page                  | Title                                     | Description  | OG Image                              | JSON-LD        |
+| --------------------- | ----------------------------------------- | ------------ | ------------------------------------- | -------------- |
+| Homepage              | `ChemTech — Industrial Chemical Products` | Site tagline | Hero banner image                     | Organization   |
+| Product listing       | `{category} Products                      | ChemTech`    | Category description                  | —              |
+| Product detail        | `{name}                                   | ChemTech`    | Stripped HTML description (160 chars) | Product schema |
+| Category              | `{name}                                   | ChemTech`    | Category description                  | —              |
+| Cart/Checkout/Account | `{Page}                                   | ChemTech`    | Generic                               | —              |
 
 ### Product JSON-LD
 
@@ -367,7 +367,7 @@ const jsonLd = {
   name: product.name,
   description: product.description.replace(/<[^>]+>/g, ''),
   image: product.images.map((img) => img.url),
-  brand: { '@type': 'Brand', name: 'OttimoDirect' },
+  brand: { '@type': 'Brand', name: 'ChemTech' },
   aggregateRating:
     product.reviewCount > 0
       ? {
@@ -518,7 +518,7 @@ public.common.*       — Shared: loading, error, empty state, currency
 
 ---
 
-## Design Principles for OttimoDirect Public Site
+## Design Principles for ChemTech Public Site
 
 These are non-negotiable aesthetic and UX decisions for this chemical products platform:
 

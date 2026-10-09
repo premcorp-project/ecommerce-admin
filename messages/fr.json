@@ -1331,7 +1331,7 @@
       "promoTitle": "Tarifs de gros disponibles",
       "promoSubtitle": "Économisez davantage en commandant en volume. Contactez-nous pour des tarifs personnalisés.",
       "promoCta": "En savoir plus",
-      "promoTrustLabel": "Pourquoi choisir OttimoDirect",
+      "promoTrustLabel": "Pourquoi choisir ChemTech",
       "promoTrustChemical": "Produits chimiques industriels",
       "promoTrustBulk": "Commandes en gros disponibles",
       "promoTrustCertified": "Certifié et conforme",
@@ -1434,7 +1434,7 @@
         "bestSeller": "Meilleures ventes",
         "topRated": "Mieux notés",
         "promoTitle": "Économisez 20% sur chaque commande",
-        "promoBody": "Rejoignez des milliers de professionnels qui font confiance à OttimoDirect pour leurs besoins industriels.",
+        "promoBody": "Rejoignez des milliers de professionnels qui font confiance à ChemTech pour leurs besoins industriels.",
         "promoCta": "Acheter maintenant",
         "empty": "Aucun produit disponible",
         "fromLabel": "À partir de",
@@ -1447,7 +1447,7 @@
         "nextAriaLabel": "Témoignage suivant",
         "items": {
           "1": {
-            "quote": "Les résines époxy de OttimoDirect ont transformé notre processus de fabrication. Qualité constante, livraison rapide.",
+            "quote": "Les résines époxy de ChemTech ont transformé notre processus de fabrication. Qualité constante, livraison rapide.",
             "name": "James Thornton",
             "role": "Directeur de production, Thornton Engineering"
           },
@@ -1464,7 +1464,7 @@
         }
       },
       "whyChemibuild": {
-        "title": "Pourquoi choisir OttimoDirect ?",
+        "title": "Pourquoi choisir ChemTech ?",
         "subtitle": "Approuvé par les professionnels à travers le Royaume-Uni pour des produits chimiques et de nettoyage de qualité.",
         "safety": {
           "title": "Sécurité et conformité",
@@ -1905,7 +1905,7 @@
       "loadingOrders": "Chargement des commandes...",
       "loadingOrder": "Chargement des détails de la commande...",
       "lookup": {
-        "pageTitle": "Suivre votre commande | OttimoDirect",
+        "pageTitle": "Suivre votre commande | ChemTech",
         "title": "Suivre votre commande",
         "subtitle": "Entrez votre numéro de commande et votre adresse e-mail pour retrouver votre commande.",
         "orderIdLabel": "Numéro de commande",
@@ -2055,9 +2055,9 @@
     },
     "auth": {
       "loginTitle": "Bon retour",
-      "loginSubtitle": "Connectez-vous à votre compte OttimoDirect",
+      "loginSubtitle": "Connectez-vous à votre compte ChemTech",
       "registerTitle": "Créer un compte",
-      "registerSubtitle": "Rejoignez OttimoDirect pour accéder à des tarifs exclusifs et au suivi des commandes",
+      "registerSubtitle": "Rejoignez ChemTech pour accéder à des tarifs exclusifs et au suivi des commandes",
       "forgotPasswordTitle": "Mot de passe oublié",
       "forgotPasswordSubtitle": "Entrez votre e-mail et nous vous enverrons un lien de réinitialisation",
       "email": "Adresse e-mail",
@@ -2165,7 +2165,7 @@
       "copiedToClipboard": "Copié dans le presse-papiers",
       "shareLink": "Partager le lien",
       "imageAlt": "Image du produit",
-      "logoAlt": "Logo OttimoDirect",
+      "logoAlt": "Logo ChemTech",
       "darkMode": "Mode sombre",
       "lightMode": "Mode clair",
       "language": "Langue",

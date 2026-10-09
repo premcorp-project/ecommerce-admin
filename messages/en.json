@@ -1559,7 +1559,7 @@
       "promoTitle": "Bulk Pricing Available",
       "promoSubtitle": "Save more when you order in volume. Contact us for custom pricing.",
       "promoCta": "Learn More",
-      "promoTrustLabel": "Why choose OttimoDirect",
+      "promoTrustLabel": "Why choose ChemTech",
       "promoTrustChemical": "Industrial-grade chemicals",
       "promoTrustBulk": "Bulk ordering available",
       "promoTrustCertified": "Certified & compliant",
@@ -1578,7 +1578,7 @@
       "heroSlideLabel": "Banner {index} of {total}",
       "heroDotNavLabel": "Banner navigation",
       "heroDotLabel": "Go to banner {index} of {total}",
-      "heroWelcomeLabel": "Welcome to OttimoDirect",
+      "heroWelcomeLabel": "Welcome to ChemTech",
       "heroOfferLine": "Sale up to 30% OFF",
       "heroFreeShipping": "Free shipping on orders over £50",
       "categoryCardAriaLabel": "Browse {name} category",
@@ -1665,7 +1665,7 @@
         "bestSeller": "Best Seller",
         "topRated": "Top Rated",
         "promoTitle": "Save 20% on Every Order",
-        "promoBody": "Join thousands of professionals who trust OttimoDirect for their industrial needs.",
+        "promoBody": "Join thousands of professionals who trust ChemTech for their industrial needs.",
         "promoCta": "Shop Now",
         "empty": "No products available",
         "fromLabel": "From",
@@ -1678,7 +1678,7 @@
         "nextAriaLabel": "Next testimonial",
         "items": {
           "1": {
-            "quote": "OttimoDirect's epoxy resins have transformed our manufacturing process. Consistent quality, fast delivery.",
+            "quote": "ChemTech's epoxy resins have transformed our manufacturing process. Consistent quality, fast delivery.",
             "name": "James Thornton",
             "role": "Production Manager, Thornton Engineering"
           },
@@ -1695,7 +1695,7 @@
         }
       },
       "whyChemibuild": {
-        "title": "Why Choose OttimoDirect?",
+        "title": "Why Choose ChemTech?",
         "subtitle": "Trusted by professionals across the UK for quality chemical and cleaning products.",
         "safety": {
           "title": "Safety & Compliance",
@@ -2149,7 +2149,7 @@
       "loadingOrders": "Loading orders...",
       "loadingOrder": "Loading order details...",
       "lookup": {
-        "pageTitle": "Track Your Order | OttimoDirect",
+        "pageTitle": "Track Your Order | ChemTech",
         "title": "Track Your Order",
         "subtitle": "Enter your order ID and email address to look up your order.",
         "orderIdLabel": "Order ID",
@@ -2299,9 +2299,9 @@
     },
     "auth": {
       "loginTitle": "Welcome Back",
-      "loginSubtitle": "Sign in to your OttimoDirect account",
+      "loginSubtitle": "Sign in to your ChemTech account",
       "registerTitle": "Create Account",
-      "registerSubtitle": "Join OttimoDirect to access exclusive pricing and order tracking",
+      "registerSubtitle": "Join ChemTech to access exclusive pricing and order tracking",
       "forgotPasswordTitle": "Forgot Password",
       "forgotPasswordSubtitle": "Enter your email and we'll send you a reset link",
       "email": "Email Address",
@@ -2409,7 +2409,7 @@
       "copiedToClipboard": "Copied to clipboard",
       "shareLink": "Share Link",
       "imageAlt": "Product image",
-      "logoAlt": "OttimoDirect logo",
+      "logoAlt": "ChemTech logo",
       "darkMode": "Dark mode",
       "lightMode": "Light mode",
       "language": "Language",

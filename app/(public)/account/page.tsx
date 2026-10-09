@@ -12,7 +12,7 @@ import { AccountDashboardContent } from './AccountDashboardContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'My Account | OttimoDirect',
+  title: 'My Account | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

@@ -12,7 +12,7 @@ import { AddressesPageContent } from './AddressesPageContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Addresses | OttimoDirect',
+  title: 'Addresses | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

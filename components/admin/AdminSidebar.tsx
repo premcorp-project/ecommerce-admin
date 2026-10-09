@@ -54,7 +54,7 @@ export function AdminSidebar() {
             className="block h-[48px] w-full max-w-[220px] relative"
           >
             <span className="flex h-full w-full items-center whitespace-nowrap text-lg font-semibold text-primary">
-              {isCollapsed ? 'CB' : 'OttimoDirect'}
+              {isCollapsed ? 'CB' : 'ChemTech'}
             </span>
           </Link>
         </div>

@@ -10,16 +10,16 @@
  *
  * Requirements: 10.3, 10.6, 10.8
  */
-import { AppButton } from '@/components/shared/AppButton';
-import { AppInputField } from '@/components/shared/form/AppInput';
-import { AppPasswordField } from '@/components/shared/form/AppPasswordField';
-import publicApi from '@/lib/api/public-api';
+import Link from 'next/link';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { FlaskConical, ShieldCheck, Truck, Users, Zap } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import toast from 'react-hot-toast';
 import * as Yup from 'yup';
+import publicApi from '@/lib/api/public-api';
+import { AppButton } from '@/components/shared/AppButton';
+import { AppInputField } from '@/components/shared/form/AppInput';
+import { AppPasswordField } from '@/components/shared/form/AppPasswordField';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -87,7 +87,11 @@ export default function RegisterPage() {
 
   const handleSubmit = async (
     values: RegisterFormValues,
-    { setSubmitting, setFieldError, resetForm }: FormikHelpers<RegisterFormValues>,
+    {
+      setSubmitting,
+      setFieldError,
+      resetForm,
+    }: FormikHelpers<RegisterFormValues>,
   ) => {
     try {
       const res = await publicApi.post<RegisterApiResponse>('/auth/register', {
@@ -145,7 +149,7 @@ export default function RegisterPage() {
             <Link href="/" className="inline-flex items-center gap-2">
               <FlaskConical className="size-8 text-primary-foreground" />
               <span className="text-2xl font-bold text-primary-foreground">
-                OttimoDirect
+                ChemTech
               </span>
             </Link>
           </div>
@@ -179,7 +183,7 @@ export default function RegisterPage() {
 
           {/* Footer */}
           <p className="text-xs text-primary-foreground/50">
-            © {new Date().getFullYear()} OttimoDirect. All rights reserved.
+            © {new Date().getFullYear()} ChemTech. All rights reserved.
           </p>
         </div>
       </div>
@@ -191,9 +195,7 @@ export default function RegisterPage() {
           <div className="lg:hidden mb-8 text-center">
             <Link href="/" className="inline-flex items-center gap-2">
               <FlaskConical className="size-6 text-primary" />
-              <span className="text-xl font-bold text-primary">
-                OttimoDirect
-              </span>
+              <span className="text-xl font-bold text-primary">ChemTech</span>
             </Link>
           </div>
 

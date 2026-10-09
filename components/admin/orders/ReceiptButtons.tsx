@@ -20,7 +20,7 @@ export function ReceiptButtons({ order }: ReceiptButtonsProps) {
   const [xlsxLoading, setXlsxLoading] = useState(false);
 
   const meta = {
-    businessName: 'OttimoDirect',
+    businessName: 'ChemTech',
     businessEmail: 'hello@chemibuild.com',
     businessWebsite: 'www.chemibuild.com',
     currency,

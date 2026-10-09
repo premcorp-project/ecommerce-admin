@@ -12,7 +12,7 @@ import { SupportPageContent } from './SupportPageContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Support | OttimoDirect',
+  title: 'Support | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

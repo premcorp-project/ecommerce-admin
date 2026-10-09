@@ -20,11 +20,11 @@ import { PopupBanner } from '@/components/public/layout/PopupBanner';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'OttimoDirect — Industrial Chemical Products',
+  title: 'ChemTech — Industrial Chemical Products',
   description:
     'Professional-grade adhesives, resins, coatings, and solvents for industrial and commercial applications. Bulk pricing available.',
   openGraph: {
-    title: 'OttimoDirect — Industrial Chemical Products',
+    title: 'ChemTech — Industrial Chemical Products',
     description:
       'Professional-grade adhesives, resins, coatings, and solvents for industrial and commercial applications.',
     type: 'website',

@@ -163,11 +163,11 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${title} | OttimoDirect`,
+    title: `${title} | ChemTech`,
     description:
       'Browse professional-grade adhesives, resins, coatings, and solvents. Filter by category, price, and attributes.',
     openGraph: {
-      title: `${title} | OttimoDirect`,
+      title: `${title} | ChemTech`,
       description:
         'Browse professional-grade adhesives, resins, coatings, and solvents. Filter by category, price, and attributes.',
       type: 'website',

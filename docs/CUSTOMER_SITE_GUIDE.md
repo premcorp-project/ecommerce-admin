@@ -1,6 +1,6 @@
 # Customer Storefront Integration Guide
 
-> **Audience:** Next.js developers building the customer-facing storefront for OttimoDirect.
+> **Audience:** Next.js developers building the customer-facing storefront for ChemTech.
 > This guide covers every API endpoint, data shape, and implementation pattern needed to build the full shopping experience.
 > This is NOT the admin panel guide.
 
@@ -3044,7 +3044,7 @@ export class ApiErrorBoundary extends Component<Props, State> {
 
 ---
 
-_Guide version: 1.0 — OttimoDirect Customer Storefront_
+_Guide version: 1.0 — ChemTech Customer Storefront_
 _Backend base URL: `http://localhost:5000/api/v1`_
 
 ---

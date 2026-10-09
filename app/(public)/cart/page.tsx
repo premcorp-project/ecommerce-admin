@@ -13,7 +13,7 @@ import { CartPageContent } from './CartPageContent';
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Cart | OttimoDirect',
+  title: 'Cart | ChemTech',
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

@@ -5182,7 +5182,7 @@ const config = data.data.config;
 
 // Use in footer, about page, contact page
 const {
-  businessName, // "OttimoDirect"
+  businessName, // "ChemTech"
   businessDescription, // "UK's leading chemical supplier"
   businessPhone, // "+44 1234 567890"
   businessEmail, // "info@chemibuild.co.uk"
@@ -5207,7 +5207,7 @@ Authorization: Bearer <admin-token>
 
 ```json
 {
-  "businessName": "OttimoDirect",
+  "businessName": "ChemTech",
   "businessDescription": "UK's leading chemical and cleaning supplies distributor",
   "businessPhone": "+44 1234 567890",
   "businessEmail": "info@chemibuild.co.uk",
@@ -5596,7 +5596,7 @@ Admin-managed testimonials displayed on the homepage. Supports customer name, ro
   "company": "Thornton Engineering",
   "avatar": "https://res.cloudinary.com/.../avatar.jpg",
   "industry": "Manufacturing",
-  "quote": "OttimoDirect's epoxy resins have transformed our manufacturing process. Consistent quality, fast delivery, and the bulk pricing saved us over £12,000 last year.",
+  "quote": "ChemTech's epoxy resins have transformed our manufacturing process. Consistent quality, fast delivery, and the bulk pricing saved us over £12,000 last year.",
   "rating": 5,
   "isActive": true,
   "position": 0,
@@ -5618,7 +5618,7 @@ Authorization: Bearer <admin-token>
   "company": "Thornton Engineering",
   "avatar": "https://example.com/avatar.jpg",
   "industry": "Manufacturing",
-  "quote": "OttimoDirect's epoxy resins have transformed our manufacturing process. Consistent quality, fast delivery.",
+  "quote": "ChemTech's epoxy resins have transformed our manufacturing process. Consistent quality, fast delivery.",
   "rating": 5,
   "isActive": true,
   "position": 0

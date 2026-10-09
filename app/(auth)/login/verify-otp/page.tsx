@@ -139,7 +139,7 @@ function VerifyLoginOtpContent() {
             <Link href="/" className="inline-flex items-center gap-2">
               <FlaskConical className="size-8 text-primary-foreground" />
               <span className="text-2xl font-bold text-primary-foreground">
-                OttimoDirect
+                ChemTech
               </span>
             </Link>
           </div>
@@ -173,7 +173,7 @@ function VerifyLoginOtpContent() {
 
           {/* Footer */}
           <p className="text-xs text-primary-foreground/50">
-            © {new Date().getFullYear()} OttimoDirect. All rights reserved.
+            © {new Date().getFullYear()} ChemTech. All rights reserved.
           </p>
         </div>
       </div>
@@ -185,9 +185,7 @@ function VerifyLoginOtpContent() {
           <div className="lg:hidden mb-8 text-center">
             <Link href="/" className="inline-flex items-center gap-2">
               <FlaskConical className="size-6 text-primary" />
-              <span className="text-xl font-bold text-primary">
-                OttimoDirect
-              </span>
+              <span className="text-xl font-bold text-primary">ChemTech</span>
             </Link>
           </div>
 

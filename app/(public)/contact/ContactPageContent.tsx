@@ -409,7 +409,7 @@ export function ContactPageContent() {
           longitude={businessLongitude || -1.7564}
           zoom={14}
           height="400px"
-          storeName={businessName || 'OttimoDirect'}
+          storeName={businessName || 'ChemTech'}
           storeAddress={
             [businessAddress, businessCity, businessPostcode]
               .filter(Boolean)

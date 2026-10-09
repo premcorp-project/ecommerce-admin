@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'OttimoDirect Admin',
-  description: 'OttimoDirect',
+  title: 'ChemTech Admin',
+  description: 'ChemTech',
 };
 
 export default async function RootLayout({

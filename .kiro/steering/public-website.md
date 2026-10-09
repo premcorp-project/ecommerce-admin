@@ -96,7 +96,7 @@ import { HeroSection } from '@/components/public/sections/hero/HeroSection';
 ```tsx
 export async function generateMetadata({ params }): Promise<Metadata> {
   return {
-    title: `${product.name} | OttimoDirect`,
+    title: `${product.name} | ChemTech`,
     // Strip HTML tags from rich-text description before using as meta
     description: product.description.replace(/<[^>]+>/g, '').slice(0, 160),
     openGraph: { images: [product.images[0]?.url] },

@@ -7,8 +7,8 @@ import type { Metadata } from 'next';
 import { UnsubscribeContent } from './UnsubscribeContent';
 
 export const metadata: Metadata = {
-  title: 'Unsubscribe | OttimoDirect',
-  description: 'Unsubscribe from OttimoDirect newsletter.',
+  title: 'Unsubscribe | ChemTech',
+  description: 'Unsubscribe from ChemTech newsletter.',
 };
 
 export default function UnsubscribePage() {

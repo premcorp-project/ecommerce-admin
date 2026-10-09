@@ -10,9 +10,9 @@ const API_BASE =
   process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:5000/api/v1';
 
 export const metadata: Metadata = {
-  title: 'About Us | OttimoDirect',
+  title: 'About Us | ChemTech',
   description:
-    'Learn about OttimoDirect — your trusted supplier of industrial chemical products.',
+    'Learn about ChemTech — your trusted supplier of industrial chemical products.',
 };
 
 export const revalidate = 300;

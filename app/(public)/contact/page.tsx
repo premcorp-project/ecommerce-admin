@@ -11,9 +11,9 @@ import type { Metadata } from 'next';
 import { ContactPageContent } from './ContactPageContent';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | OttimoDirect',
+  title: 'Contact Us | ChemTech',
   description:
-    'Get in touch with OttimoDirect for bulk orders, technical support, or general enquiries. We respond within 24 hours.',
+    'Get in touch with ChemTech for bulk orders, technical support, or general enquiries. We respond within 24 hours.',
 };
 
 export default function ContactPage() {
